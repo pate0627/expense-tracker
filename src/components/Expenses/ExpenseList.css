@@ -8,3 +8,8 @@
   margin: 1rem;
   text-align: center;
 }
+
+.expense-list__image {
+  width: 15rem;
+  border-radius: 12px;
+}
