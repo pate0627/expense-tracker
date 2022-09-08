@@ -1,10 +1,20 @@
 import React from "react";
 import ExpenseItem from "./ExpenseItem";
 import "./ExpenseList.css";
+import NoExpenses from "../../assets/images/Wallet_Isometric.svg";
 
 const ExpenseList = (props) => {
   if (props.items.length === 0) {
-    return <h2 className="expense-list__message">No expense found.</h2>;
+    return (
+      <div className="expense-list__message">
+        <img
+          className="expense-list__image"
+          src={NoExpenses}
+          alt="There is no expense"
+        ></img>
+        <h2>No expense found.</h2>
+      </div>
+    );
   }
 
   return (
